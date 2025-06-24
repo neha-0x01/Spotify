@@ -82,5 +82,62 @@ cursor: pointer;
 
 #myProgressBar {
     width: 80vw;
-    text-align: center;
+  
+}
+
+.SongList h1 {
+    font-size: 25px;
+}
+
+/* .songItem{
+   height: 40px;
+   display: flex;
+   background-color: white;
+   width:33% ;
+   color: black;
+   margin: 12px 0 ;
+   justify-content: space-between;
+   align-items: center;
+   border-radius:34px ;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px ;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+} */
+
+
+.songItem {
+  height: 49px; 
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 33%;  
+  color: black;
+  margin: 12px 0;
+  border-radius: 50px;
+  padding: 0 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.songItem img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.songlistplay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.timestamp {
+  font-size: 14px;
+  color: #555;
 }
