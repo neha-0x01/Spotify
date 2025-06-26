@@ -52,6 +52,7 @@ nav ul li {
   padding: 20px;
   overflow: hidden;
   color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -79,7 +80,6 @@ nav ul li {
 
 .SongBanner {
   width: 45%;
- /*  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,13 +158,20 @@ nav ul li {
 
 #myProgressBar {
   width: 80vw;
+  cursor: pointer;
 }
 
 .songInfo{
   position:absolute;
-  left:0 ;
+  left:10vw ;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:12px;
 }
 
+.songInfo img{
+ opacity: 0;
+ transition: opacity 1s ease-in;
+}
 
 @media (max-width: 768px) {
   .container {
@@ -181,4 +188,4 @@ nav ul li {
     height: 250px;
     margin-top: 20px;
   }
-}
+}  
