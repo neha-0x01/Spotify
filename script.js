@@ -12,12 +12,16 @@ let gif = document.getElementById('gif');
 
 let songs = [
     
-        {songName: "salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
-         {songName: "salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
-         {songName: "salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
-         {songName: "salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
-         { songName: "salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
-        { songName: "salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
+        {songName: "a-salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/1.jpg"},
+         {songName: "b-salam-e-Ishq" , filePath: "Song/2.mp3" , CoverPath: "covers/2.jpg"},
+         {songName: "c-salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/3.jpg"},
+         {songName: "d-salam-e-Ishq" , filePath: "Song/2.mp3" , CoverPath: "covers/4.jpg"},
+         { songName: "e-salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/5.jpg"},
+        { songName: "f-salam-e-Ishq" , filePath: "Song/2.mp3" , CoverPath: "covers/6.jpg"},
+        { songName: "g-salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/7.jpg"},
+        { songName: "h-salam-e-Ishq" , filePath: "Song/2.mp3" , CoverPath: "covers/8.jpg"},
+        { songName: "i-salam-e-Ishq" , filePath: "Song/1.mp3" , CoverPath: "covers/9.jpg"},
+        { songName: "j-salam-e-Ishq" , filePath: "Song/2.mp3" , CoverPath: "covers/10.jpg"},
            
 ]
 
@@ -51,4 +55,8 @@ audioElement.addEventListener('timeupdate', ()=>{
   console.log (progress);
 
   myProgressBar.value = progress;
+
+  myProgressBar.addEventListener('change',()=>{
+    audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
+  })
 })
