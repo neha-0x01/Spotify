@@ -7,3 +7,20 @@ body{
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+
+.brand img{
+  width: 44px;
+}
